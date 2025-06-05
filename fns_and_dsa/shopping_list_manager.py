@@ -13,9 +13,9 @@ def main():
 
         # print(shopping_list,'\n')
 
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             #add an item
             item = input("Enter items to add: ")
             if item:
@@ -24,7 +24,7 @@ def main():
             else: 
                 print('no item entered')
             
-        elif choice == '2':
+        elif choice == 2:
             # remove item
             item = input("Item to remove: ")
             if item in shopping_list:
@@ -33,7 +33,7 @@ def main():
             else:
                 print(f"{item} is not in the list \n")
             
-        elif choice == '3':
+        elif choice == 3:
             # Display shopping list
             if shopping_list:
                 for item in shopping_list:
@@ -41,7 +41,7 @@ def main():
             else: 
                 print("shopping list empty. \n")
 
-        elif choice == '4':
+        elif choice == 4:
             print('Goodbye!')
             break
         else:
