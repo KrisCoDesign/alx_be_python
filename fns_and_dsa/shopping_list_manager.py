@@ -17,7 +17,7 @@ def main():
 
         if choice == 1:
             #add an item
-            item = input("Enter items to add: ")
+            item = input("Enter the item to add: ")
             if item:
                 shopping_list.append(item)
                 print('item added')
