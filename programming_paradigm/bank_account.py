@@ -5,7 +5,6 @@ class BankAccount:
     def deposit(self,amount):
         if amount:
             self.account_balance += amount
-            print(f"current balance: ${self.account_balance}")
         else:
             print("print enter deposit amount")
         
